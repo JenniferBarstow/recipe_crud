@@ -1,7 +1,9 @@
 <% @recipes.each do |recipe| %>
 <%= recipe.name %> - <%= recipe.ingredients %>
-<hr>
+<br>
 <%= link_to "View Recipe", recipe_path(recipe) %>
 <%= link_to "Delete Recipe", recipe_path(recipe), method: "delete" %>
+<br>
+<hr>
 
 <% end %>
